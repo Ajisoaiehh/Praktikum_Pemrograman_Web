@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Judul 1</title>
+</head>
+<header>
+    <h1>Sistem Informasi Data Mahasiswa - Praktikum 1 - Kelas PPW E</h1>
+    <p>Sistem ini berisikan mengenai informasi data mahasiswa pada praktikum ppwe judul 1</p>
+    <img src="https://upload.wikimedia.org/wikipedia/id/c/cc/Chelsea_FC.svg?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=original" alt="Logo" width="200" height="200">
+</header>
+<hr> 
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="data_mahasiswa.html">Data Mahasiswa</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+<hr> 
+<main>
+    <section>
+        <h2>Informasi Praktikum</h2>
+        <p>Praktikum ini bertujuan untuk membuat sistem informasi data mahasiswa menggunakan HTML, CSS, dan JavaScript. Silakan jelajahi halaman-halaman berikut untuk melihat data mahasiswa dan informasi lainnya.</p>
+    <h2>Selamat Datang di Sistem Informasi Data Mahasiswa</h2>
+    <p>Ini adalah halaman utama dari sistem informasi data mahasiswa pada praktikum ppwe judul 1. Silakan gunakan navigasi di atas untuk mengakses halaman lainnya.
+        <article>
+            <h3>Artikel Terkait</h3>
+            <p>Berikut adalah beberapa artikel terkait dengan Chelsea FC:</p>
+            <ul>
+                <li><a href="https://www.traveloka.com/id-id/explore/activities/sejarah-chelsea-fc-ta/531216">Artikel 1: Chelsea FC - Sejarah dan Prestasi</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/2026%E2%80%9327_Chelsea_F.C._season">Artikel 2: Line Up Chelsea</a></li>
+                <li><a href="https://www.bola.com/inggris/read/8271008/jadwal-lengkap-chelsea-di-liga-inggris-20262027">Artikel 3: Jadwal Pertandingan</a></li>
+            </ul>
+    </p>
+    </section>
+    <hr>
+    <section id="daftar-mahasiswa">
+        <h2>Daftar Mahasiswa</h2>
+        <p>Berikut adalah daftar mahasiswa yang terdaftar dalam praktikum ini:</p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Foto</th>
+                    <th>NPM</th>
+                    <th>Nama Lengkap</th>
+                    <th>Program Studi</th>
+                    <th>Angkatan</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+           <tbody>
+                <tr> 
+                    <td>1</td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg7MbLX8XAv4RO6R-3NZrwcAmMj5qfZELNbuUkUOdSpQ&s=10" alt="Foto 1" width="100" height="100"></td>
+                    <td>2415061115</td>
+                    <td>Anugrah Aziz</td>
+                    <td>TI</td>
+                    <td>2024</td>
+                    <td>anugrah.aziz@example.com</td>
+                </tr>
+                <tr> 
+                    <td>1</td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg7MbLX8XAv4RO6R-3NZrwcAmMj5qfZELNbuUkUOdSpQ&s=10" alt="Foto 1" width="100" height="100"></td>
+                    <td>2415061102</td>
+                    <td>Firdaus</td>
+                    <td>TI</td>
+                    <td>2015</td>
+                    <td>firdaus@example.com</td>
+                </tr>
+                <tr> 
+                    <td>1</td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg7MbLX8XAv4RO6R-3NZrwcAmMj5qfZELNbuUkUOdSpQ&s=10" alt="Foto 1" width="100" height="100"></td>
+                    <td>2415061125</td>
+                    <td>Ajis</td>
+                    <td>TI</td>
+                    <td>2024</td>
+                    <td>ajis@example.com</td>
+                </tr>
+           </tbody>
+        </table>
+    </section>
+    <hr>
+    <section id="form-tambah">
+        <h2>Mahasiswa Baru</h2>
+        <p>tambahkan nama mahasiswa baru:</p>
+        <form action="proses_tambah.php" method="post">
+            <label for="npm">NPM:</label>
+            <input type="text" id="npm" name="npm" placeholder="Masukkan NPM" pattern="^\[0-9]{8,12}$" title="NPM harus terdiri dari 10 digit angka" required><br><br><small>NPM harus terdiri dari 10 digit angka</small><br><br>  
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required><br><br> <small>Nama lengkap harus diisi</small><br><br>  
+            <label for="prodi">Program Studi:</label>
+            <select id="prodi" name="prodi" required>
+                <option value="">Pilih Program Studi</option>
+                <option value="TI">Teknik Informatika</option>
+                <option value="SI">Sistem Informasi</option>
+            </select><br><br> <small>Program studi harus dipilih</small><br><br>
+            <label for="angkatan">Angkatan:</label>
+            <input type="text" id="angkatan" name="angkatan" placeholder="Masukkan angkatan" minlength="3" maxlength="100" required><br><br><small>Angkatan harus terdiri dari 4 digit angka</small><br><br>
+            <label for="email">Email:</label>
+            <input type ="email" id="email" name="email" placeholder="Masukkan email" required><br><br> <small>Email harus valid</small><br><br>
+        </form>
+            <button type="submit" value="Simpan data mahasiswa">Simpan</button>
+            <button type="reset" value="Reset Formulir">Reset</button>
+        <ul>
+</main>
+<body>
+    
+</body>
+</html>
