@@ -170,7 +170,7 @@ function hapus_mahasiswa($npm) {
 
     foreach ($_SESSION['daftar_mahasiswa'] as $index => $mhs) {
         if ($mhs['npm'] === $npm) {
-            $npmDihapus = $mhs['npm'];
+            $namaDihapus = $mhs['nama'];
             unset($_SESSION['daftar_mahasiswa'][$index]);
             // Re-index array
             $_SESSION['daftar_mahasiswa'] = array_values($_SESSION['daftar_mahasiswa']);
